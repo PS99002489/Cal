@@ -74,7 +74,7 @@ void calculator_menu(void)
             printf("\n\t%d - %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
-            subtract(cal_operand1, cal_operand2));
+            sub(cal_operand1, cal_operand2));
             
             __fpurge(stdin);
             getchar();
@@ -83,7 +83,7 @@ void calculator_menu(void)
             printf("\n\t%d * %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
-            multiply(cal_operand1, cal_operand2));
+            mult(cal_operand1, cal_operand2));
             
             __fpurge(stdin);
             getchar();
@@ -92,7 +92,7 @@ void calculator_menu(void)
             printf("\n\t%d / %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
-            divide(cal_operand1, cal_operand2));
+            div(cal_operand1, cal_operand2));
             
             __fpurge(stdin);
             getchar();
