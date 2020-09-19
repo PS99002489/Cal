@@ -12,7 +12,7 @@ int cal_operand1 = 0;
 int cal_operand2 = 0;
 
 
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, EXIT };
+enum operations{ ADD=1, SUB, MULT, DIV, EXIT };
 
 
 void calculator_menu(void);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Exit");
+    printf("\n1. Add\n2. Sub\n3. Mul\n4. Div\n5. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -70,7 +70,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case SUBTRACT:
+        case SUB:
             printf("\n\t%d - %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
@@ -79,7 +79,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case MULTIPLY:
+        case MULT:
             printf("\n\t%d * %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
@@ -88,7 +88,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case DIVIDE:
+        case DIV:
             printf("\n\t%d / %d = %d\nEnter to continue", 
             cal_operand1, 
             cal_operand2,
