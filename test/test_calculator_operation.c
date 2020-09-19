@@ -7,9 +7,9 @@
 
 /* Prototypes for all the test functions */
 void test_add(void);
-void test_sub(void);
-void test_mult(void);
-void test_div(void);
+void test_subtract(void);
+void test_multiply(void);
+void test_divide(void);
 
 /* Start of the application test */
 int main() {
@@ -55,41 +55,41 @@ void test_add(void) {
   CU_ASSERT(1500 == add(750, 7500));
 }
 
-void test_sub(void) {
-  CU_ASSERT(-3 == sub(0, 3));
+void test_subtract(void) {
+  CU_ASSERT(-3 == subtract(0, 3));
   
  
-  CU_ASSERT(2 == sub(5, 3));
+  CU_ASSERT(2 == subtract(5, 3));
 
   
-  CU_ASSERT(-3 == sub(4, 3));
+  CU_ASSERT(-3 == subtract(4, 3));
 
   /* Dummy fail*/
-  CU_ASSERT(1 == sub(1000, 900));
+  CU_ASSERT(1 == subtract(1000, 900));
 }
 
-void test_mult(void) {
-  CU_ASSERT(0 == mult(1, 0));
+void test_multiply(void) {
+  CU_ASSERT(0 == multiply(1, 0));
 
   
-  CU_ASSERT(25 == mult(5, 5));
+  CU_ASSERT(25 == multiply(5, 5));
 
  
-  CU_ASSERT(12 == mult(2, 33));
+  CU_ASSERT(12 == multiply(2, 33));
   
   /* Dummy fail*/
-  CU_ASSERT(2 == mult(2, 5));
+  CU_ASSERT(2 == multiply(2, 5));
 }
 
-void test_div(void) {
-  CU_ASSERT(0 == div(1, 0));
+void test_divide(void) {
+  CU_ASSERT(0 == divide(1, 0));
 
  
-  CU_ASSERT(2 == div(4, 2));
+  CU_ASSERT(2 == divide(4, 2));
 
   
-  CU_ASSERT(5 == div(4,4));
+  CU_ASSERT(5 == divide(4,4));
   
   /* Dummy fail*/
-  CU_ASSERT(3 == div(2, 2));
+  CU_ASSERT(3 == divide(2, 2));
 }
